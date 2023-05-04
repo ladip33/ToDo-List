@@ -1,0 +1,22 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
+@import "./layout/header.scss";
+
+@import "./base/reset.scss";
+@import "./base/typography.scss";
+
+@import "./components/logout.scss";
+@import "./components/todos.scss";
+
+@import "./pages/home.scss";
+@import "./pages/signIn.scss";
+@import "./pages/todoList.scss";
+
+body {
+  max-width: 100%;
+  height: 100vh;
+  background-color: $background-dark;
+  color: $color-light;
+  overflow-x: hidden;
+}
