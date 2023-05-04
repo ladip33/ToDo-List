@@ -1,0 +1,63 @@
+.todos {
+  margin-top: 51px;
+
+  ul {
+    list-style: none;
+    max-width: 595px;
+
+    li {
+      width: 100%;
+      height: 54px;
+      padding-left: 24px;
+      font-size: 22px;
+      font-weight: 300;
+      border-radius: 4px;
+      background-color: $color-dark;
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s ease-in-out;
+
+      &.completed {
+        background-color: rgb(233, 233, 233);
+        color: white;
+      }
+
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+
+      .todos-icons {
+        display: flex;
+        align-items: center;
+
+        .todosIconsBox {
+          width: 48px;
+          height: 54px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            border-radius: 4px;
+          }
+        }
+
+        .doneIcon-box {
+          &:hover {
+            background-color: $button-background;
+          }
+        }
+
+        .deleteIcon-box {
+          &:hover {
+            background-color: $button-delete;
+          }
+        }
+      }
+    }
+  }
+}

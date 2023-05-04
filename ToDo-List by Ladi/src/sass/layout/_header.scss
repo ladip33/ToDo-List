@@ -1,0 +1,47 @@
+.header {
+  background-color: $color-dark;
+
+  .container {
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  a {
+    font-size: 36px;
+    font-weight: 800;
+    text-decoration: none;
+    color: $color-light;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.2s ease-in-out;
+
+    p {
+      font-size: 22px;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+
+    .user-img {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-color: #e6ebff;
+      cursor: pointer;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
